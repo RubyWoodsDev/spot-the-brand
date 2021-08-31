@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hot dog not hot dog</title>
+    <title>Brand Identifier</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
   </head>
+  <style>
+    .container{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    padding:250px 50px 50px 50px;
+    
+  }
+ /* / h1{ color: White;
+  text-align: center;
+    
+} */
+
+.brand { 
+  /* align: center; */
+margin:0 auto;
+}
+
+  </style>
   <body>
      
     <h1>Please upload an image below:</h1>
-    <form action="/" enctype="multipart/form-data" method="post">
-      <input type="file" name="file-to-upload">
-      <input type="submit" value="Upload">
+    <form class="form-inline" action="/" enctype="multipart/form-data" method="post">
+      <input class ="brand"type="file" name="file-to-upload">
+      <input class= "brand"type="submit" value="Upload">
+
     </form>  
   </body>
 </html>

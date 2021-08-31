@@ -1,3 +1,55 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+background-image:url("./images/Sunflower.jpg");
+/* background-size: cover;
+height:500px;
+width:500px; */
+background-size: 100% 1200px; 
+    background-repeat: no-repeat;
+overflow:hidden;
+}
+
 img{
     width: 500px;
+    height:500px;
 }
+h1{
+    text-align:center;
+    color:white; 
+    padding:40px;
+}
+.form-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: white;
+
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .names{
+      text-align:center;
+      font-size:40px;
+
+  }
+   li{
+       list-style-type: none;
+   }
