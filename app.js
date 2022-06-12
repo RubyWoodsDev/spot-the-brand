@@ -60,7 +60,7 @@ app.post("/", upload.single("file-to-upload"), async (req, res) => {
     const result = await cloudinary.uploader.upload(req.file.path);
     const brandURLImage = result.secure_url;
     // Analyze URL image
-    console.log("Analyzing brands in image...", brandURLImage.split("/").pop());
+    console.log("Analyzing brands in image...", brandURLImage.split("/"));
     const brands = (
       await computerVisionClient.analyzeImage(brandURLImage, {
         visualFeatures: ["Brands"],
